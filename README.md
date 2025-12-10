@@ -1,16 +1,27 @@
-# Mini Workflow Engine (FastAPI) — Very Beginner Friendly
+#Workflow Engine (FastAPI)
 
-This is a tiny Python backend you can run on Windows.  
-It runs a simple "Code Review Mini-Agent" workflow that analyzes Python code step-by-step.
-
+A minimal backend system that runs a node-based workflow engine with shared state, basic branching, looping, and a sample Code Review Mini-Agent workflow.
 ---
 
-## What you will get
-A folder named `workflow_engine` with a tiny FastAPI app and a simple in-memory workflow engine:
-- Extracts functions from your code
-- Measures a simple complexity metric
-- Detects basic code "smells"
-- Suggests improvements and computes a quality score
+## Overview
+This project implements a minimal workflow/graph engine, inspired by LangGraph but intentionally simple.
+It supports:
+
+Nodes (Python functions)
+
+Shared state passed between nodes
+
+Basic edges (A → B → C)
+
+Looping (repeat steps until condition met)
+
+Conditional branching
+
+In-memory run storage
+
+FastAPI endpoints to run workflows
+
+A sample workflow Code Review Mini-Agent is included.
 
 ---
 
